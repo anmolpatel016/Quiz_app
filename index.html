@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1 class="quiz-title">🧠 Knowledge Test</h1>
+            <p class="quiz-subtitle">Test your knowledge across various topics</p>
+            <div class="timer" id="globalTimer">
+                <p><i class="fas fa-stopwatch"></i> 10:00</p>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Quiz Content -->
+        <div class="quiz-content" id="quizContent">
+            <!-- Questions will be dynamically inserted here -->
+        </div>
+
+        <!-- Results Container -->
+        <div class="results-container" id="resultsContainer">
+            <div class="score-display" id="scoreDisplay">0/0</div>
+            <div class="score-text" id="scoreText">You scored 0 out of 0 questions correctly</div>
+            <div class="performance-message" id="performanceMessage"></div>
+            <button class="restart-btn" onclick="restartQuiz()">🔄 Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
